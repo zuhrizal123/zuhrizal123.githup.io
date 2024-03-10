@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <title>latihan 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--  form grid/layout -->
+      <h5>form grid</h5>
+      <div class="row g-2">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="username" />
+        </div>
+        <div class="col">
+          <input type="password" class="form-control" placeholder="password" />
+        </div>
+      </div>
+      <hr />
+      <h5>form data mahasiswa</h5>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-2">
+            <label>nama-lengkap</label>
+            <input type="text" class="form-control" placeholder="nama-lengkap" />
+          </div>
+          <div class="col-md-2 mb-2">
+            <label>nim</label>
+            <input type="text" class="form-control" placeholder="nim" />
+          </div>
+          <di class="col-md-4 mb-2">
+            <label>jurusan</label>
+            <select class="form-select">
+              <option value="">sistem informasi</option>
+              <option value="">teknik informatika</option>
+              <option value="">manajemen informatika</option>
+            </select>
+          </di>
+
+          <div class="col-md-4 mb-2">
+            <label>no hp</label>
+            <input type="number" class="form-control" placeholder="masukan no hp anda" />
+          </div>
+          <div class="col-md-4 mb-2">
+            <label>email</label>
+            <input type="email" class="form-control" placeholder="masukan email anda" />
+          </div>
+          <div class="col-md4 mb-2">
+            <label>alamat</label>
+            <input type="text" class="form-control" placeholder="masukan alamat anda" />
+          </div>
+          <div class="col-md-2 mx-auto">
+            <button class="btn btn-danger">simpan</button>
+          </div>
+        </div>
+      </form>
+      <hr />
+      <!-- form validation -->
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validatesaya" class="form-label">nama-saya</label>
+          <input type="text" class="form-control" id="validatesaya" value="merek" required />
+          <div class="valid-feedback">looks good</div>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
